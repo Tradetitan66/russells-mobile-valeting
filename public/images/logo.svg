@@ -1,69 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Russell's Valeting Service logo">
   <defs>
-    <clipPath id="circleClip">
-      <circle cx="200" cy="200" r="192" />
-    </clipPath>
+    <path id="topArc" d="M 52,200 A 148,148 0 0 1 348,200" fill="none"/>
   </defs>
 
-  <g clipPath="url(#circleClip)">
-    <circle cx="200" cy="200" r="192" fill="#0a1628" />
-    <circle cx="200" cy="200" r="180" fill="#ffffff" />
+  <circle cx="200" cy="200" r="194" fill="#0d1b2a"/>
+  <circle cx="200" cy="200" r="183" fill="#ffffff"/>
 
-    <path id="topArc" d="M 60,200 A 140,140 0 0,1 340,200" fill="none" />
-    <path id="bottomArc" d="M 80,240 A 120,120 0 0,0 320,240" fill="none" />
+  <text font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-weight="900" font-size="40" fill="#1e5c9e" letter-spacing="3">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">RUSSELL&#8217;S</textPath>
+  </text>
 
-    <text font-family="Arial Black, Impact, sans-serif" font-size="38" font-weight="900" fill="#0a4da6" letter-spacing="3">
-      <textPath href="#topArc" startOffset="50%" text-anchor="middle">RUSSELL&apos;S</textPath>
-    </text>
-
-    <g fill="#0a4da6">
-      <polygon points="140,130 148,150 170,150 152,162 159,182 140,170 121,182 128,162 110,150 132,150" />
-      <polygon points="200,115 210,140 236,140 215,155 223,180 200,165 177,180 185,155 164,140 190,140" />
-      <polygon points="260,130 268,150 290,150 272,162 279,182 260,170 241,182 248,162 230,150 252,150" />
-    </g>
-
-    <g transform="translate(60, 175) scale(1.05)">
-      <path d="M 15,70 Q 15,55 30,50 L 60,45 Q 80,42 100,45 L 140,42 Q 160,40 175,38 Q 190,35 195,30 L 198,25 Q 200,20 195,18 Q 190,15 180,16 Q 170,18 160,20 L 140,22 Q 120,25 100,28 L 70,32 Q 50,35 40,38 Q 30,40 25,42 Q 20,45 20,50 L 18,75 Q 18,80 25,82 L 50,85 Q 75,88 100,88 Q 130,88 160,85 L 175,83 Q 185,82 190,78 Q 195,75 195,70 Q 195,65 188,63 L 175,60 Q 160,57 140,55 L 100,53 Q 80,52 60,55 L 45,57 Q 35,58 30,60 Q 25,62 25,65 Z" fill="#e0e0e0" stroke="#0a1628" stroke-width="3" />
-
-      <path d="M 25,60 L 20,80 Q 18,85 25,86 L 40,88 Q 55,89 60,87 L 58,68 Q 57,62 50,60 Z" fill="#0a4da6" stroke="#0a1628" stroke-width="2" />
-      <path d="M 165,60 L 170,80 Q 172,85 165,86 L 150,88 Q 135,89 130,87 L 132,68 Q 133,62 140,60 Z" fill="#0a4da6" stroke="#0a1628" stroke-width="2" />
-
-      <path d="M 50,52 Q 55,35 70,30 L 85,28 Q 95,27 100,30 L 95,42 Q 80,44 65,45 Z" fill="#4db8e8" stroke="#0a1628" stroke-width="2" />
-      <path d="M 100,28 L 140,25 Q 155,24 165,25 L 175,26 Q 180,27 178,32 L 170,38 Q 150,40 130,40 L 105,40 Q 95,39 95,35 Z" fill="#4db8e8" stroke="#0a1628" stroke-width="2" />
-
-      <circle cx="55" cy="78" r="20" fill="#0a1628" />
-      <circle cx="55" cy="78" r="14" fill="#ffffff" />
-      <circle cx="55" cy="78" r="10" fill="none" stroke="#0a1628" stroke-width="2" />
-      <line x1="55" y1="68" x2="55" y2="88" stroke="#0a1628" stroke-width="2" />
-      <line x1="45" y1="78" x2="65" y2="78" stroke="#0a1628" stroke-width="2" />
-      <line x1="48" y1="71" x2="62" y2="85" stroke="#0a1628" stroke-width="1.5" />
-      <line x1="62" y1="71" x2="48" y2="85" stroke="#0a1628" stroke-width="1.5" />
-
-      <circle cx="148" cy="78" r="20" fill="#0a1628" />
-      <circle cx="148" cy="78" r="14" fill="#ffffff" />
-      <circle cx="148" cy="78" r="10" fill="none" stroke="#0a1628" stroke-width="2" />
-      <line x1="148" y1="68" x2="148" y2="88" stroke="#0a1628" stroke-width="2" />
-      <line x1="138" y1="78" x2="158" y2="78" stroke="#0a1628" stroke-width="2" />
-      <line x1="141" y1="71" x2="155" y2="85" stroke="#0a1628" stroke-width="1.5" />
-      <line x1="155" y1="71" x2="141" y2="85" stroke="#0a1628" stroke-width="1.5" />
-
-      <path d="M 75,75 Q 110,70 145,75" fill="none" stroke="#0a1628" stroke-width="2" />
-      <path d="M 80,65 Q 110,60 140,62" fill="none" stroke="#0a1628" stroke-width="1.5" />
-
-      <ellipse cx="155" cy="55" rx="8" ry="5" fill="#0a1628" />
-      <ellipse cx="190" cy="35" rx="6" ry="4" fill="#0a1628" />
-
-      <path d="M 100,65 L 180,58 L 190,65 L 180,72 L 100,75 Z" fill="#0a4da6" opacity="0.8" />
-      <path d="M 180,58 L 195,60 L 198,68 L 192,72 L 180,72" fill="#4db8e8" stroke="#0a1628" stroke-width="1.5" />
-    </g>
-
-    <text font-family="Arial Black, Impact, sans-serif" font-size="34" font-weight="900" fill="#0a4da6" letter-spacing="2">
-      <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">VALETING</textPath>
-    </text>
-    <text font-family="Arial Black, Impact, sans-serif" font-size="34" font-weight="900" fill="#0a4da6" letter-spacing="2">
-      <textPath href="#bottomArc" startOffset="50%" dy="42" text-anchor="middle">SERVICE</textPath>
-    </text>
-
-    <circle cx="200" cy="200" r="192" fill="none" stroke="#0a1628" stroke-width="8" />
+  <g fill="#1e5c9e">
+    <polygon points="200,102 205.8,120 224.7,120 209.4,131.1 215.3,149 200,137.9 184.7,149 190.6,131.1 175.3,120 194.2,120"/>
+    <polygon points="148,115 152.3,128.1 166.1,128.1 154.9,136.2 159.2,149.4 148,141.3 136.8,149.4 141.1,136.2 129.9,128.1 143.7,128.1"/>
+    <polygon points="252,115 256.3,128.1 270.1,128.1 258.9,136.2 263.2,149.4 252,141.3 240.8,149.4 245.1,136.2 233.9,128.1 247.7,128.1"/>
   </g>
+
+  <g transform="translate(200,210)">
+    <g transform="scale(1.15)">
+      <path d="M -90,12 Q -90,-2 -70,-8 L -25,-13 Q 0,-16 35,-12 L 80,-5 Q 95,-3 100,-10 Q 102,-16 96,-18 Q 88,-20 78,-18 L 40,-12 Q 20,-10 0,-12 L -35,-14 Q -55,-15 -70,-12 Q -82,-10 -90,-5 Z" fill="#ffffff" stroke="#0d1b2a" stroke-width="4"/>
+
+      <path d="M -55,-10 L -72,18 Q -75,24 -68,25 L -45,27 Q -28,28 -22,26 L -25,12 Q -20,6 -28,5 Z" fill="#1e5c9e" stroke="#0d1b2a" stroke-width="2"/>
+      <path d="M 50,-10 L 62,18 Q 65,24 58,25 L 40,27 Q 25,28 20,26 L 25,12 Q 30,6 22,5 Z" fill="#1e5c9e" stroke="#0d1b2a" stroke-width="2"/>
+
+      <path d="M -30,-14 Q -15,-38 5,-42 L 25,-44 Q 38,-43 42,-38 Q 40,-30 25,-26 L -5,-24 Q -22,-22 -30,-14 Z" fill="#6ec5e8" stroke="#0d1b2a" stroke-width="2"/>
+      <path d="M 10,-44 L 55,-42 Q 72,-40 78,-36 L 82,-28 Q 70,-30 50,-30 L 18,-30 Q 8,-30 10,-44 Z" fill="#6ec5e8" stroke="#0d1b2a" stroke-width="2"/>
+
+      <circle cx="-65" cy="14" r="22" fill="#0d1b2a"/>
+      <circle cx="-65" cy="14" r="15" fill="#ffffff"/>
+      <circle cx="-65" cy="14" r="3" fill="#0d1b2a"/>
+      <g stroke="#0d1b2a" stroke-width="2" stroke-linecap="round">
+        <line x1="-65" y1="0" x2="-65" y2="28"/>
+        <line x1="-51" y1="14" x2="-79" y2="14"/>
+        <line x1="-56" y1="3" x2="-74" y2="25"/>
+        <line x1="-74" y1="3" x2="-56" y2="25"/>
+        <line x1="-65" y1="-10" x2="-65" y2="-2"/>
+        <line x1="-65" y1="30" x2="-65" y2="38"/>
+      </g>
+
+      <circle cx="55" cy="14" r="22" fill="#0d1b2a"/>
+      <circle cx="55" cy="14" r="15" fill="#ffffff"/>
+      <circle cx="55" cy="14" r="3" fill="#0d1b2a"/>
+      <g stroke="#0d1b2a" stroke-width="2" stroke-linecap="round">
+        <line x1="55" y1="0" x2="55" y2="28"/>
+        <line x1="41" y1="14" x2="69" y2="14"/>
+        <line x1="46" y1="3" x2="64" y2="25"/>
+        <line x1="64" y1="3" x2="46" y2="25"/>
+        <line x1="55" y1="-10" x2="55" y2="-2"/>
+        <line x1="55" y1="30" x2="55" y2="38"/>
+      </g>
+
+      <path d="M -40,3 Q 0,0 30,5" fill="none" stroke="#0d1b2a" stroke-width="2"/>
+      <path d="M -30,-6 Q 0,-9 25,-7" fill="none" stroke="#0d1b2a" stroke-width="1.5"/>
+
+      <path d="M 68,8 Q 80,10 85,16" fill="none" stroke="#0d1b2a" stroke-width="2"/>
+
+      <ellipse cx="38" cy="-18" rx="5" ry="3" fill="#0d1b2a"/>
+
+      <path d="M 10,-1 L 75,0 L 82,8 L 75,12 L 10,10 Z" fill="#1e5c9e" opacity="0.9"/>
+      <path d="M 75,0 L 88,2 L 90,10 L 82,12 L 75,12" fill="#6ec5e8" stroke="#0d1b2a" stroke-width="2"/>
+      <line x1="78" y1="3" x2="87" y2="4" stroke="#6ec5e8" stroke-width="1.5"/>
+      <line x1="76" y1="7" x2="86" y2="8" stroke="#6ec5e8" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <text font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-weight="900" font-size="36" fill="#1e5c9e" letter-spacing="4">
+    <text x="200" y="318" text-anchor="middle">VALETING</text>
+  </text>
+  <text font-family="'Arial Black','Arial Bold',Arial,Helvetica,sans-serif" font-weight="900" font-size="36" fill="#1e5c9e" letter-spacing="4">
+    <text x="200" y="356" text-anchor="middle">SERVICE</text>
+  </text>
+
+  <circle cx="200" cy="200" r="194" fill="none" stroke="#0d1b2a" stroke-width="10"/>
 </svg>
