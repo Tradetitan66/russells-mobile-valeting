@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="192" />
+    </clipPath>
+  </defs>
+
+  <g clipPath="url(#circleClip)">
+    <circle cx="200" cy="200" r="192" fill="#0a1628" />
+    <circle cx="200" cy="200" r="180" fill="#ffffff" />
+
+    <path id="topArc" d="M 60,200 A 140,140 0 0,1 340,200" fill="none" />
+    <path id="bottomArc" d="M 80,240 A 120,120 0 0,0 320,240" fill="none" />
+
+    <text font-family="Arial Black, Impact, sans-serif" font-size="38" font-weight="900" fill="#0a4da6" letter-spacing="3">
+      <textPath href="#topArc" startOffset="50%" text-anchor="middle">RUSSELL&apos;S</textPath>
+    </text>
+
+    <g fill="#0a4da6">
+      <polygon points="140,130 148,150 170,150 152,162 159,182 140,170 121,182 128,162 110,150 132,150" />
+      <polygon points="200,115 210,140 236,140 215,155 223,180 200,165 177,180 185,155 164,140 190,140" />
+      <polygon points="260,130 268,150 290,150 272,162 279,182 260,170 241,182 248,162 230,150 252,150" />
+    </g>
+
+    <g transform="translate(60, 175) scale(1.05)">
+      <path d="M 15,70 Q 15,55 30,50 L 60,45 Q 80,42 100,45 L 140,42 Q 160,40 175,38 Q 190,35 195,30 L 198,25 Q 200,20 195,18 Q 190,15 180,16 Q 170,18 160,20 L 140,22 Q 120,25 100,28 L 70,32 Q 50,35 40,38 Q 30,40 25,42 Q 20,45 20,50 L 18,75 Q 18,80 25,82 L 50,85 Q 75,88 100,88 Q 130,88 160,85 L 175,83 Q 185,82 190,78 Q 195,75 195,70 Q 195,65 188,63 L 175,60 Q 160,57 140,55 L 100,53 Q 80,52 60,55 L 45,57 Q 35,58 30,60 Q 25,62 25,65 Z" fill="#e0e0e0" stroke="#0a1628" stroke-width="3" />
+
+      <path d="M 25,60 L 20,80 Q 18,85 25,86 L 40,88 Q 55,89 60,87 L 58,68 Q 57,62 50,60 Z" fill="#0a4da6" stroke="#0a1628" stroke-width="2" />
+      <path d="M 165,60 L 170,80 Q 172,85 165,86 L 150,88 Q 135,89 130,87 L 132,68 Q 133,62 140,60 Z" fill="#0a4da6" stroke="#0a1628" stroke-width="2" />
+
+      <path d="M 50,52 Q 55,35 70,30 L 85,28 Q 95,27 100,30 L 95,42 Q 80,44 65,45 Z" fill="#4db8e8" stroke="#0a1628" stroke-width="2" />
+      <path d="M 100,28 L 140,25 Q 155,24 165,25 L 175,26 Q 180,27 178,32 L 170,38 Q 150,40 130,40 L 105,40 Q 95,39 95,35 Z" fill="#4db8e8" stroke="#0a1628" stroke-width="2" />
+
+      <circle cx="55" cy="78" r="20" fill="#0a1628" />
+      <circle cx="55" cy="78" r="14" fill="#ffffff" />
+      <circle cx="55" cy="78" r="10" fill="none" stroke="#0a1628" stroke-width="2" />
+      <line x1="55" y1="68" x2="55" y2="88" stroke="#0a1628" stroke-width="2" />
+      <line x1="45" y1="78" x2="65" y2="78" stroke="#0a1628" stroke-width="2" />
+      <line x1="48" y1="71" x2="62" y2="85" stroke="#0a1628" stroke-width="1.5" />
+      <line x1="62" y1="71" x2="48" y2="85" stroke="#0a1628" stroke-width="1.5" />
+
+      <circle cx="148" cy="78" r="20" fill="#0a1628" />
+      <circle cx="148" cy="78" r="14" fill="#ffffff" />
+      <circle cx="148" cy="78" r="10" fill="none" stroke="#0a1628" stroke-width="2" />
+      <line x1="148" y1="68" x2="148" y2="88" stroke="#0a1628" stroke-width="2" />
+      <line x1="138" y1="78" x2="158" y2="78" stroke="#0a1628" stroke-width="2" />
+      <line x1="141" y1="71" x2="155" y2="85" stroke="#0a1628" stroke-width="1.5" />
+      <line x1="155" y1="71" x2="141" y2="85" stroke="#0a1628" stroke-width="1.5" />
+
+      <path d="M 75,75 Q 110,70 145,75" fill="none" stroke="#0a1628" stroke-width="2" />
+      <path d="M 80,65 Q 110,60 140,62" fill="none" stroke="#0a1628" stroke-width="1.5" />
+
+      <ellipse cx="155" cy="55" rx="8" ry="5" fill="#0a1628" />
+      <ellipse cx="190" cy="35" rx="6" ry="4" fill="#0a1628" />
+
+      <path d="M 100,65 L 180,58 L 190,65 L 180,72 L 100,75 Z" fill="#0a4da6" opacity="0.8" />
+      <path d="M 180,58 L 195,60 L 198,68 L 192,72 L 180,72" fill="#4db8e8" stroke="#0a1628" stroke-width="1.5" />
+    </g>
+
+    <text font-family="Arial Black, Impact, sans-serif" font-size="34" font-weight="900" fill="#0a4da6" letter-spacing="2">
+      <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">VALETING</textPath>
+    </text>
+    <text font-family="Arial Black, Impact, sans-serif" font-size="34" font-weight="900" fill="#0a4da6" letter-spacing="2">
+      <textPath href="#bottomArc" startOffset="50%" dy="42" text-anchor="middle">SERVICE</textPath>
+    </text>
+
+    <circle cx="200" cy="200" r="192" fill="none" stroke="#0a1628" stroke-width="8" />
+  </g>
+</svg>

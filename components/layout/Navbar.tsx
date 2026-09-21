@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { business } from "@/lib/business";
 import { Button } from "@/components/ui/Button";
@@ -57,9 +58,17 @@ export function Navbar() {
       <div className="container-site flex h-16 md:h-20 items-center justify-between gap-4">
         <Link
           href="/"
-          className="font-medium tracking-tight text-sm md:text-base text-foreground hover:text-accent transition-colors"
+          className="flex items-center gap-2 font-medium tracking-tight text-sm md:text-base text-foreground hover:text-accent transition-colors"
           onClick={() => setOpen(false)}
         >
+          <Image
+            src="/images/logo.svg"
+            alt="Russell's Valeting Service"
+            width={36}
+            height={36}
+            className="rounded-full object-cover"
+            priority
+          />
           {business.name}
         </Link>
 
