@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { business } from "@/lib/business";
 import { Button } from "@/components/ui/Button";
@@ -8,16 +6,8 @@ import {
   getWhatsAppUrl,
 } from "@/lib/business";
 import { Reveal } from "@/components/ui/Reveal";
-import { useState } from "react";
-import QuoteForm from "./QuoteForm";
 
 export function QuoteCTA() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleQuoteClick = () => {
-    setIsModalOpen(true);
-  };
-
   return (
     <section className="relative py-28 md:py-40 overflow-hidden">
       <Image
@@ -40,7 +30,7 @@ export function QuoteCTA() {
             recommend the right service for your vehicle.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button onClick={handleQuoteClick} size="lg" showArrow>
+            <Button href="/contact#quote-form" size="lg" showArrow>
               Get a Quote
             </Button>
             <Button
@@ -60,29 +50,6 @@ export function QuoteCTA() {
           </a>
         </Reveal>
       </div>
-
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
-          onClick={() => setIsModalOpen(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="quote-form-title"
-        >
-          <div
-            className="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <QuoteForm
-              onClose={() => setIsModalOpen(false)}
-              prefillData={{
-                vehicle: "[vehicle]",
-                location: "[location]",
-              }}
-            />
-          </div>
-        </div>
-      )}
     </section>
   );
 }

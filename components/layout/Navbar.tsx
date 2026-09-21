@@ -96,47 +96,47 @@ export function Navbar() {
         </button>
       </div>
 
-      <div
-        className={cn(
-          "lg:hidden fixed inset-x-0 top-16 bottom-0 bg-background transition-transform duration-400 ease-out",
-          open ? "translate-x-0" : "translate-x-full pointer-events-none",
-        )}
-        aria-hidden={!open}
-      >
-        <nav
-          className="container-site flex flex-col gap-2 py-8"
-          aria-label="Mobile"
-        >
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="flex min-h-14 items-center border-b border-border text-lg tracking-tight text-foreground"
-            >
-              {link.label}
-            </Link>
-          ))}
-          <div className="mt-8 flex flex-col gap-3">
-            <Button
-              href="/contact"
-              showArrow
-              className="w-full"
-              onClick={() => setOpen(false)}
-            >
-              Get a Quote
-            </Button>
-            <Button
-              href={`https://wa.me/${business.whatsappDigits}`}
-              variant="secondary"
-              external
-              className="w-full"
-            >
-              WhatsApp
-            </Button>
-          </div>
-        </nav>
-      </div>
+<div
+         className={cn(
+           "lg:hidden fixed inset-x-0 top-16 bottom-0 bg-background/90 transition-transform duration-400 ease-out",
+           open ? "translate-x-0" : "translate-x-full pointer-events-none",
+         )}
+         aria-hidden={!open}
+       >
+         <nav
+           className="container-site flex flex-col gap-1 py-6"
+           aria-label="Mobile"
+         >
+           {navLinks.map((link) => (
+             <Link
+               key={link.href}
+               href={link.href}
+               onClick={() => setOpen(false)}
+               className="flex min-h-12 items-center px-4 border-b border-border/50 text-lg tracking-tight text-foreground/90 hover:text-foreground hover:bg-background/50"
+             >
+               {link.label}
+             </Link>
+           ))}
+           <div className="mt-6 flex flex-col gap-3">
+             <Button
+               href="/contact"
+               showArrow
+               className="w-full"
+               onClick={() => setOpen(false)}
+             >
+               Get a Quote
+             </Button>
+             <Button
+               href={`https://wa.me/${business.whatsappDigits}`}
+               variant="secondary"
+               external
+               className="w-full"
+             >
+               WhatsApp
+             </Button>
+           </div>
+         </nav>
+       </div>
     </header>
   );
 }
