@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { business } from "@/lib/business";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { motion } from "framer-motion";
 
 export function Hero() {
   return (
@@ -11,7 +14,7 @@ export function Hero() {
         alt="BMW X6 M Competition after Russell's mobile valet"
         fill
         priority
-        className="object-cover object-[center_40%] scale-105 motion-safe:animate-none"
+        className="object-cover object-[center_40%] scale-105"
         sizes="100vw"
       />
       <div
@@ -20,7 +23,16 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-background/20" aria-hidden />
 
-      <div className="relative container-site w-full pb-16 pt-32 md:pb-24 md:pt-40">
+      <motion.div
+        className="relative container-site w-full pb-16 pt-32 md:pb-24 md:pt-40"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-80px" as const }}
+        transition={{
+          duration: 0.8,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+      >
         <p className="eyebrow mb-6 text-foreground/80">
           Mobile Valeting &amp; Detailing
           <span className="mx-3 text-accent/60">·</span>
@@ -63,7 +75,7 @@ export function Hero() {
         <p className="mt-8 eyebrow text-muted/80">
           Fully Mobile · Fully Insured · Professional Car Care
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 }
