@@ -97,10 +97,10 @@ export function Navbar() {
       </div>
 
 <div
-         className={cn(
-           "lg:hidden fixed inset-x-0 top-16 bottom-0 bg-background/90 transition-transform duration-400 ease-out",
-           open ? "translate-x-0" : "translate-x-full pointer-events-none",
-         )}
+className={cn(
+          "lg:hidden fixed inset-x-0 top-16 bottom-0 bg-background transition-transform duration-400 ease-out",
+          open ? "translate-x-0" : "translate-x-full pointer-events-none",
+        )}
          aria-hidden={!open}
        >
          <nav
@@ -112,7 +112,7 @@ export function Navbar() {
                key={link.href}
                href={link.href}
                onClick={() => setOpen(false)}
-               className="flex min-h-12 items-center px-4 border-b border-border/50 text-lg tracking-tight text-foreground/90 hover:text-foreground hover:bg-background/50"
+               className="flex min-h-12 items-center px-4 border-b border-border text-lg tracking-tight text-foreground hover:text-foreground hover:bg-background-secondary"
              >
                {link.label}
              </Link>
