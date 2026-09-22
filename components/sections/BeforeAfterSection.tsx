@@ -47,7 +47,7 @@ export function BeforeAfterSection() {
               aria-selected={i === index}
               onClick={() => setIndex(i)}
               className={cn(
-                "min-h-11 px-4 text-xs uppercase tracking-[0.14em] border transition-colors",
+                "min-h-11 px-4 text-xs uppercase tracking-[0.14em] border rounded-full transition-colors",
                 i === index
                   ? "border-accent text-accent"
                   : "border-border text-muted hover:text-foreground hover:border-border-strong",

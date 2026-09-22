@@ -73,7 +73,7 @@ export function Button(props: ButtonProps) {
   const size = props.size ?? "md";
   const showArrow = props.showArrow ?? false;
   const classes = cn(
-    "inline-flex items-center justify-center gap-2 font-medium uppercase transition-colors duration-300 min-w-[44px] disabled:opacity-50 disabled:pointer-events-none group",
+    "inline-flex items-center justify-center gap-2 font-medium uppercase transition-colors duration-300 min-w-[44px] rounded-full disabled:opacity-50 disabled:pointer-events-none group",
     variants[variant],
     sizes[size],
     props.className,

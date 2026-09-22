@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { business } from "@/lib/business";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { MenuVertical } from "@/components/ui/MenuVertical";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -96,7 +97,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="lg:hidden inline-flex size-11 items-center justify-center text-foreground"
+          className="lg:hidden inline-flex size-11 items-center justify-center rounded-full text-foreground"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -120,20 +121,14 @@ export function Navbar() {
           aria-hidden={!open}
         >
           <nav
-            className="container-site flex flex-col gap-1 py-6"
+            className="container-site flex flex-col gap-6 py-8"
             aria-label="Mobile"
           >
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="flex min-h-12 items-center px-4 border-b border-border/60 text-lg tracking-tight text-foreground transition-colors hover:text-foreground hover:bg-background/80 active:scale-[0.995]"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="mt-6 flex flex-col gap-3">
+            <MenuVertical
+              menuItems={navLinks}
+              onNavigate={() => setOpen(false)}
+            />
+            <div className="mt-2 flex max-w-xs flex-col gap-3">
               <Button
                 href="/contact"
                 showArrow

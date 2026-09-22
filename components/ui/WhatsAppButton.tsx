@@ -33,7 +33,7 @@ export function WhatsAppButton({
         rel="noopener noreferrer"
         aria-label={`WhatsApp ${business.name}`}
         className={cn(
-          "inline-flex size-11 items-center justify-center text-foreground transition-colors hover:text-accent",
+          "inline-flex size-11 items-center justify-center rounded-full text-foreground transition-colors hover:text-accent",
           className,
         )}
       >

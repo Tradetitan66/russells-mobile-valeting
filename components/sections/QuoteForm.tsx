@@ -174,7 +174,7 @@ Location: ${location}`;
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full bg-accent text-white px-4 py-3 rounded-md hover:bg-accent/90 transition-colors font-medium ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
+          className={`w-full bg-accent text-white px-4 py-3 rounded-full hover:bg-accent/90 transition-colors font-medium ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
         >
           {isSubmitting ? "Sending..." : "Get Quote & Open WhatsApp"}
         </button>
