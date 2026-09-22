@@ -115,7 +115,7 @@ export function Navbar() {
       aria-hidden={!open}
     >
           <nav
-            className="container-site flex flex-col gap-6 pt-20 pb-8"
+            className="container-site pl-8 flex flex-col gap-6 pt-20 pb-8"
             aria-label="Mobile"
           >
             <MenuVertical
