@@ -48,6 +48,7 @@ export function Navbar() {
   const solid = scrolled || !isHome || open;
 
   return (
+    <>
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
@@ -105,23 +106,16 @@ export function Navbar() {
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
       </div>
-
-{open && (
-          <div
-            className="lg:hidden fixed inset-0 z-40 bg-black/60 backdrop-blur-sm"
-            onClick={() => setOpen(false)}
-            aria-hidden="true"
-          />
-        )}
-        <div
-          className={cn(
-            "lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-background-secondary border-t border-border shadow-2xl transition-transform duration-300 ease-out",
-            open ? "translate-x-0" : "translate-x-full pointer-events-none",
-          )}
-          aria-hidden={!open}
-        >
+    </header>
+    <div
+      className={cn(
+        "lg:hidden fixed inset-x-0 top-0 h-dvh z-40 bg-background-secondary overflow-y-auto overscroll-contain transition-transform duration-300 ease-out",
+        open ? "translate-x-0" : "translate-x-full pointer-events-none",
+      )}
+      aria-hidden={!open}
+    >
           <nav
-            className="container-site flex flex-col gap-6 py-8"
+            className="container-site flex flex-col gap-6 pt-20 pb-8"
             aria-label="Mobile"
           >
             <MenuVertical
@@ -147,7 +141,7 @@ export function Navbar() {
               </Button>
             </div>
           </nav>
-        </div>
-    </header>
+    </div>
+  </>
   );
 }
