@@ -29,7 +29,7 @@ export const MenuVertical = ({
       {menuItems.map((item, index) => (
         <motion.div
           key={`${item.href}-${index}`}
-          className="group/nav flex items-center gap-3 overflow-hidden cursor-pointer"
+          className="group/nav flex items-center gap-3 overflow-hidden cursor-pointer text-foreground"
           initial="initial"
           whileHover="hover"
         >

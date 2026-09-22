@@ -115,25 +115,24 @@ export function Navbar() {
         )}
         <div
           className={cn(
-            "lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-white text-black border-t border-black/10 shadow-2xl transition-transform duration-300 ease-out",
+            "lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-background-secondary border-t border-border shadow-2xl transition-transform duration-300 ease-out",
             open ? "translate-x-0" : "translate-x-full pointer-events-none",
           )}
           aria-hidden={!open}
         >
           <nav
-            className="container-site flex flex-col gap-6 py-10"
+            className="container-site flex flex-col gap-6 py-8"
             aria-label="Mobile"
           >
             <MenuVertical
               menuItems={navLinks}
-              color="#111111"
               onNavigate={() => setOpen(false)}
             />
-            <div className="mt-4 flex max-w-xs flex-col gap-3">
+            <div className="mt-2 flex max-w-xs flex-col gap-3">
               <Button
                 href="/contact"
                 showArrow
-                className="w-full bg-dark text-light hover:bg-black hover:text-white"
+                className="w-full"
                 onClick={() => setOpen(false)}
               >
                 Get a Quote
@@ -142,7 +141,7 @@ export function Navbar() {
                 href={`https://wa.me/${business.whatsappDigits}`}
                 variant="secondary"
                 external
-                className="w-full border-dark bg-dark text-light hover:border-black hover:bg-black hover:text-white"
+                className="w-full"
               >
                 WhatsApp
               </Button>
