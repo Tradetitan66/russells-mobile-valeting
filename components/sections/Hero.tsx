@@ -14,7 +14,7 @@ export function Hero() {
         alt="BMW X6 M Competition after Russell's mobile valet"
         fill
         priority
-        className="object-cover object-[center_40%] scale-105"
+        className="object-cover object-[center_65%] scale-110 -translate-y-[4%]"
         sizes="100vw"
       />
       <div
